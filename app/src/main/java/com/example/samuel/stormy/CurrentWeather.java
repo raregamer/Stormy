@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.TimeZone;
 
 public class CurrentWeather {
+    //test
 
     private String mIcon;
     private long mTime;
