@@ -1,6 +1,7 @@
 package com.example.samuel.stormy;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.v7.app.AppCompatActivity;
@@ -111,6 +112,9 @@ public class MainActivity extends AppCompatActivity {
         mHumidityValue.setText(mCurrentWeather.getHumidity() + "");
         mPrecipitationValue.setText(mCurrentWeather.getPrecipitationChance() + "%");
         mSummaryLabel.setText(mCurrentWeather.getSummary());
+
+        Drawable drawable = getResources().getDrawable(mCurrentWeather.getIconId());
+        mIconImageView.setImageDrawable(drawable);
 
     }
 
